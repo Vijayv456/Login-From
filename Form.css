@@ -1,0 +1,177 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  /* background: linear-gradient(to left,white,#73d2de); */
+  background-color: black;
+}
+.container {
+  border: 1px solid white;
+  width: 18rem;
+  height: 80%;
+  margin: auto;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0px 0px 52px white;
+}
+.heading {
+  padding-top: 2%;
+  font-size: 30px;
+  font-weight: bold;
+  padding-bottom: 2%;
+  text-align: center;
+}
+.Signupbtn {
+  border-left: none;
+}
+.loginbtn,
+.Signupbtn {
+  border: 1px solid;
+  border-radius: 5px;
+  width: 40%;
+  height: 40px;
+}
+#loginbtn {
+  margin-right: 0%;
+  margin-left: 10%;
+  font-size: 1rem;
+  color: gray;
+}
+#signupbtn {
+  margin-left: -2%;
+  font-size: 1rem;
+  color: gray;
+}
+.logemail,
+.logpass {
+  margin-top: 5%;
+  margin-left: 10%;
+  margin-right: 8%;
+}
+.login-submit {
+  margin-top: 5%;
+  margin-left: 10%;
+  margin-right: 12%;
+}
+.emailin,
+.passwordin {
+  border: 1px solid;
+  border-radius: 5px;
+  width: 96%;
+  height: 40px;
+  padding-left: 4%;
+}
+.forgotpassword,
+.Alreadymember {
+  margin-left: 10%;
+  margin-top: 1%;
+  font-size: .7rem;
+}
+
+.forgotpassword a {
+  text-decoration: none;
+  color: red;
+  font-size: .7rem;
+}
+.loginsub {
+  border: 1px solid;
+  border-radius: 5px;
+  width: 102%;
+  height: 40px;
+  font-size: 1rem;
+}
+.notamember {
+    font-size: .7rem;
+  margin-top: 5%;
+  text-align: center;
+  margin-bottom: 5%;
+}
+.notamember a {
+  text-decoration: none;
+  color: red;
+  font-size: .7rem;
+}
+.loginbtn:hover {
+  background-color: black;
+  transition: 0.2s;
+  color: white;
+}
+.Signupbtn:hover {
+  background-color: black;
+  transition: 0.2s;
+  color: white;
+}
+/* signup */
+.signup-firstName,
+.signup-lastName,
+.signup-email,
+.signup-password {
+  margin-top: 5%;
+  margin-left: 10%;
+  margin-right: 8%;
+}
+.signup-submit {
+  margin-top: 5%;
+  margin-left: 10%;
+  margin-right: 12%;
+}
+.Firstname,
+.LastName,
+.emailup,
+.passwordup {
+  border: 1px solid;
+  border-radius: 5px;
+  width: 96%;
+  height: 40px;
+  padding-left: 4%;
+}
+.Alreadymember a {
+  text-decoration: none;
+  color: red;
+  font-size: .7rem;
+}
+.signupsubmit {
+  border: 1px solid;
+  border-radius: 5px;
+  width: 102%;
+  height: 40px;
+  font-size: 1rem;
+}
+.signup-submit {
+  margin-bottom: 5%;
+}
+.signupwindow {
+  display: none;
+}
+#signuphead {
+  display: none;
+}
+.signupsubmit,
+.loginsub {
+  background-color: black;
+  color: white;
+}
+.alert {
+  margin-top: 5%;
+  margin-left: 10%;
+  margin-right: 12%;
+  text-align: center;
+  margin-bottom: 5%;
+  color: red;
+  font-size: .7rem;
+}
+@media (min-width: 992px) {
+  .container {
+    border: 1px solid white;
+    width: 28rem;
+    height: 80%;
+    margin: auto;
+    background-color: white;
+    border-radius: 5px;
+  }
+  .forgotpassword a ,
+  .Alreadymember ,.notamember a ,.notamember,.alert,.Alreadymember a{
+  
+    font-size: 1rem;
+  }
+}

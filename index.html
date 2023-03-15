@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./Form.css">
+    <title>Login</title>
+  
+   
+  </head>
+  <body>
+    <div class="container">
+      <div class="heading" id="loginhead">Login</div>
+      <div class="heading" id="signuphead">Signup</div>
+      <div class="buttons">
+        <button class="loginbtn" id="loginbtn" onclick="login()">Login</button>
+        <button class="Signupbtn" id="signupbtn" onclick="signup()">Signup</button>
+      </div>
+      <div class="loginwindow" id="loginwindow">
+        <form id="login-form">
+          <div class="logemail">
+            <input
+              type="email"
+              placeholder="Email Address"
+              required
+              class="emailin"
+            />
+          </div>
+          <div class="logpass">
+            <input
+              type="password"
+              placeholder="Password"
+              required
+              class="passwordin"
+            />
+          </div>
+          <div class="forgotpassword">
+            <a href="#">Forgot password?</a>
+          </div>
+          <div class="login-submit">
+            <input type="submit" value="Login" class="loginsub" />
+          </div>
+        </form>
+        <div class="notamember">Not a member?<a href="#" onclick="signup()">Signup now</a></div>
+      </div>
+      <div class="signupwindow" id="signupwindow">
+        <from id="signup-from">
+          <div class="signup-firstName">
+            <input
+              type="text"
+              placeholder="First Name"
+              required
+              class="Firstname"
+              id="Firstname"
+            />
+          </div>
+          <div class="signup-lastName">
+            <input
+              type="text"
+              placeholder="Last Name"
+              required
+              class="LastName"
+              id="LastName"
+            />
+          </div>
+          <div class="signup-email">
+            <input
+              type="email"
+              placeholder="Email Address"
+              required
+              class="emailup"
+              id="emailup"
+            />
+          </div>
+          <div class="signup-password">
+            <input
+              type="password"
+              placeholder="Password"
+              required
+              class="passwordup"
+              id="passwordup"
+            />
+          </div>
+          <div class="Alreadymember">
+            Already a member?
+            <a href="#loginwindow" onclick="login()">Log In</a>
+          </div>
+          <div class="signup-submit">
+            <input type="submit" value="Submit" class="signupsubmit" onclick="signupsubmit()"/>
+          </div>
+          <div class="alert" id="alert">
+            If an error occurs when filling a from,a message will show here
+          </div>
+        </from>
+      </div>
+    </div>
+    <script src="./Form.js"></script>
+
+  </body>
+</html>
